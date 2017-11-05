@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_me_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context="com.zwd.circlesocial20.widget.MeItem">
+    <RelativeLayout
+        android:id="@+id/me_item"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height">
+        <TextView
+            android:id="@+id/me_item_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义"
+            android:textSize="@dimen/nomaltextsize"
+            android:textColor="@color/tab_before"
+            android:layout_centerVertical="true" />
+        <ImageView
+            android:id="@+id/me_item_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:src="@mipmap/left" />
+    </RelativeLayout>
+
+
+</LinearLayout>

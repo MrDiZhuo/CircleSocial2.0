@@ -1,0 +1,51 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/hint</item>
+    </style>
+
+    <style name="mypopwindow_anim_style" >
+        <item name="android:windowEnterAnimation">@anim/popshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/pophidden_anim</item>
+    </style>
+
+
+    <style name="dot_style">
+        <item name="android:layout_width">5dp</item>
+        <item name="android:layout_height">5dp</item>
+        <item name="android:background">@drawable/point_unpressed</item>
+        <item name="android:layout_marginLeft">1.5dp</item>
+        <item name="android:layout_marginRight">1.5dp</item>
+    </style>
+
+    <style name="MyTabLayoutText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+         <item name="android:textSize">@dimen/smallsize</item>
+        <item name="android:textColor">@color/nomaltext</item>
+        <item name="android:paddingTop">@dimen/margin</item>
+        <item name="android:paddingBottom">@dimen/margin</item>
+    </style>
+    <style name="unMyTabLayoutText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse">
+        <item name="android:textSize">@dimen/nomaltextsize</item>
+        <item name="android:textColor">@color/tab_after</item>
+    </style>
+
+
+    <style name="circlepop_anim_style" >
+        <item name="android:windowEnterAnimation">@anim/circlepopshow_anim</item>
+        <item name="android:windowExitAnimation">@anim/circlepophidden_anim</item>
+    </style>
+
+    <declare-styleable name="roundedimageview">
+        <attr name="roundedimageview_border_thickness" format="dimension"/>
+    </declare-styleable>
+
+    <style name="newparty_anim_style" >
+        <item name="android:windowEnterAnimation">@anim/slide_in_bottom</item>
+        <item name="android:windowExitAnimation">@anim/slide_out_bottom</item>
+    </style>
+
+</resources>

@@ -1,0 +1,18 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zwd.circlesocial20.Party.MyParty_1Fragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_party_1_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/littlehidder"
+        app:layoutManager="LinearLayoutManager"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+
+</FrameLayout>

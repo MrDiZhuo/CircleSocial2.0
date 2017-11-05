@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_choose__introduce"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    tools:context="com.zwd.circlesocial20.Party.Choose_Introduce">
+
+    <com.zwd.circlesocial20.widget.BackActionBar
+        android:id="@+id/choose_introduce_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:id="@+id/choose_introduce_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choose_introduce_actionbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/title"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/choose_introduce_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/a" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/nomal_margin"
+
+                    android:layout_marginRight="@dimen/nomal_margin"
+                    android:layout_marginTop="@dimen/small_margin"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/choose_introduce_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="胖哥俩肉蟹煲"
+                        android:textColor="@color/nomaltext"
+                        android:textSize="@dimen/smallsize" />
+
+                    <TextView
+                        android:id="@+id/choose_introduce_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/nomal_margin"
+                        android:layout_marginTop="@dimen/small_margin"
+                        android:text="我们的肉蟹煲很好吃，真的很好吃，超级好吃，真的很好吃，真的"
+                        android:textColor="@color/tab_before"
+                        android:textSize="@dimen/supersmall" />
+
+                    <com.loveplusplus.demo.image.NoScrollGridView
+                        android:id="@+id/choose_introduce_grid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_marginBottom="@dimen/edit_height"
+                        android:numColumns="3"
+                        android:stretchMode="columnWidth"
+                        android:verticalSpacing="@dimen/hidder"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/title"
+                android:layout_marginTop="@dimen/small_margin"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/choose_introduce_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:layout_marginTop="@dimen/small_margin">
+
+                    <ImageView
+                        android:id="@+id/choose_introduce_img_1"
+                        android:layout_width="@dimen/supersmall_img"
+                        android:layout_height="@dimen/supersmall_img"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/location" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_toRightOf="@id/choose_introduce_img_1"
+                        android:text="江干区高沙路高沙商业街118号"
+                        android:textColor="@color/nomaltext"
+                        android:textSize="@dimen/smallsize" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:src="@mipmap/left" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/littlehidder"
+                    android:background="@color/back"
+                    android:layout_marginLeft="@dimen/margin"/>
+                <RelativeLayout
+                    android:id="@+id/choose_introduce_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height">
+
+                    <ImageView
+                        android:id="@+id/choose_introduce_img_2"
+                        android:layout_width="@dimen/supersmall_img"
+                        android:layout_height="@dimen/supersmall_img"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_centerVertical="true"
+                        android:src="@mipmap/phone" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin"
+                        android:layout_toRightOf="@id/choose_introduce_img_2"
+                        android:text="150708144163"
+                        android:textColor="@color/nomaltext"
+                        android:textSize="@dimen/smallsize" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin"
+                        android:src="@mipmap/left" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/choose_introduce_btn"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionbarheight"
+        android:layout_alignParentBottom="true"
+        android:background="@color/tab_after"
+        android:text="选择该商家"
+        android:textColor="@color/title"
+        android:textSize="@dimen/action_bar_title" />
+</RelativeLayout>

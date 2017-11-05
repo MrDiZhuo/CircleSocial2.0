@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/margin">
+        <View
+            android:layout_width="0dp"
+            android:layout_height="@dimen/hidder"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical"
+            android:background="@color/tab_after"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/nomal_margin"
+            android:layout_marginRight="@dimen/nomal_margin"
+            android:text="推荐到"
+            android:gravity="center_horizontal"
+            android:textSize="@dimen/smallsize"
+            android:textColor="@color/tab_after"/>
+        <View
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:layout_gravity="center_vertical"
+            android:layout_height="@dimen/hidder"
+            android:background="@color/tab_after"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:id="@+id/party_share_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/party_share_img1"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/friend_img"
+                android:layout_height="@dimen/friend_img"
+                android:src="@mipmap/circle_after" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/party_share_img1"
+                android:text="圈子"
+                android:textSize="@dimen/supersmall"
+                android:layout_marginTop="@dimen/tab_header"
+                android:textColor="@color/tab_after"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/party_share_friend"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/party_share_img2"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/friend_img"
+                android:layout_height="@dimen/friend_img"
+                android:src="@mipmap/friend_after" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/party_share_img2"
+                android:text="朋友"
+                android:textSize="@dimen/supersmall"
+                android:layout_marginTop="@dimen/tab_header"
+                android:textColor="@color/tab_after"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/party_share_weixin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/party_share_img3"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/friend_img"
+                android:layout_height="@dimen/friend_img"
+                android:src="@mipmap/share_weixin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/party_share_img3"
+                android:text="微信好友"
+                android:textSize="@dimen/supersmall"
+                android:layout_marginTop="@dimen/tab_header"
+                android:textColor="@color/tab_after"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/party_share_QQ"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+            <ImageView
+                android:id="@+id/party_share_img4"
+                android:layout_centerHorizontal="true"
+                android:layout_width="@dimen/friend_img"
+                android:layout_height="@dimen/friend_img"
+                android:src="@mipmap/share_qq" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/party_share_img4"
+                android:text="QQ好友"
+                android:textSize="@dimen/supersmall"
+                android:layout_marginTop="@dimen/tab_header"
+                android:textColor="@color/tab_after"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/littlehidder"
+        android:background="@color/back"/>
+    <TextView
+        android:id="@+id/party_share_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/nomaltextsize"
+        android:text="取消"
+        android:paddingTop="@dimen/nomal_margin"
+        android:paddingBottom="@dimen/nomal_margin"
+        android:gravity="center_horizontal"
+        android:textColor="@color/tab_after"/>
+
+
+</LinearLayout>

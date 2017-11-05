@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title"
+    android:id="@+id/friend_child">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.zwd.circlesocial20.util.CircleImageView
+            android:id="@+id/friend_child_head"
+            android:layout_width="@dimen/friend_img"
+            android:layout_height="@dimen/friend_img"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/ic_launcher"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nomal_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/friend_child_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/smallsize"
+                android:textColor="@color/nomaltext"
+                android:text="123"/>
+            <TextView
+                android:id="@+id/friend_child_mood"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/small_margin"
+                android:textSize="@dimen/supersmall"
+                android:textColor="@color/tab_before"
+                android:text="123"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</LinearLayout>

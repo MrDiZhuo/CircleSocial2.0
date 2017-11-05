@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_motions_publish"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.zwd.circlesocial20.widget.BackActionBar
+        android:id="@+id/motions_publish_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/title"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/motions_publish_content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/new_edit"
+            android:layout_margin="@dimen/margin"
+            android:background="@null"
+            android:hint="分享此刻的心情..."
+            android:gravity="start"
+            android:textColor="@color/nomaltext"
+            android:textSize="@dimen/nomaltextsize"
+            android:textCursorDrawable="@null"
+            android:cursorVisible="false"/>
+
+        <GridView
+            android:id="@+id/motions_publish_gridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/nomal_margin"
+            android:layout_marginRight="@dimen/nomal_margin"
+            android:layout_marginBottom="@dimen/me_margin"
+            android:horizontalSpacing="8dp"
+            android:maxWidth="280dp"
+            android:numColumns="4"
+            android:verticalSpacing="8dp"/>
+        </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/motions_publish_ll_location"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/edit_height"
+        android:layout_marginTop="@dimen/me_margin"
+        android:background="@color/title">
+
+        <ImageView
+        android:layout_width="@dimen/supersmall_img"
+        android:layout_height="@dimen/supersmall_img"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/margin"
+            android:layout_centerVertical="true"
+        android:src="@mipmap/location"
+            android:id="@+id/motions_publish_img" />
+
+
+
+        <TextView
+            android:id="@+id/motions_publish_tv_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择位置"
+            android:textColor="@color/nomaltext"
+            android:textSize="@dimen/nomaltextsize"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/motions_publish_img"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:src="@mipmap/left" />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

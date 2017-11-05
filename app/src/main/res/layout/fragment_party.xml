@@ -1,0 +1,325 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/party_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back"
+    android:orientation="vertical"
+    tools:context="com.zwd.circlesocial20.ViewPager.PartyFragment">
+
+    <com.zwd.circlesocial20.widget.BackActionBar
+        android:id="@+id/party_actionbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <android.support.design.widget.CoordinatorLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back">
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/back">
+                <LinearLayout
+                    android:id="@+id/ll_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_scrollFlags="scroll|enterAlways" >
+                    <com.zwd.circlesocial20.util.BannerViewPager
+                        android:id="@+id/banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="90dp"
+                        app:layout_scrollFlags="scroll|enterAlways" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/me_margin"
+                        android:background="@color/title"
+                        android:orientation="vertical"
+                        app:layout_scrollFlags="scroll|enterAlways">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_weight="1"
+                            android:orientation="horizontal">
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_1"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/party_new" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_1"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="最新活动"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_2"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/party_party" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_2"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="聚餐"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_3"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/party_table" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_3"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="桌游"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_4"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/party_sing" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_4"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="唱歌"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_5"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/party_play" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_5"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="电玩"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="@dimen/small_margin"
+                            android:layout_marginTop="@dimen/small_margin"
+                            android:layout_weight="1">
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_6"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/dance" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_6"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="舞会"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_7"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/climb" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_7"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="爬山"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_8"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/cycle" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_8"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="骑行"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+
+                                <ImageView
+                                    android:id="@+id/image_9"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/excime" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_9"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="健身"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall" />
+
+                            </RelativeLayout>
+                            <RelativeLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1">
+                                <ImageView
+                                    android:id="@+id/image_10"
+                                    android:layout_width="@dimen/little_img"
+                                    android:layout_height="@dimen/little_img"
+                                    android:layout_centerHorizontal="true"
+                                    android:src="@mipmap/prefer" />
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/image_10"
+                                    android:layout_centerHorizontal="true"
+                                    android:layout_marginTop="@dimen/tab_header"
+                                    android:text="特色"
+                                    android:textColor="@color/nomaltext"
+                                    android:textSize="@dimen/supersmall"  />
+                            </RelativeLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            <include
+                android:id="@+id/party_buy"
+                layout="@layout/party_layout"/>
+
+
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/party_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/littlehidder"
+            app:layoutManager="LinearLayoutManager"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
+
+
+

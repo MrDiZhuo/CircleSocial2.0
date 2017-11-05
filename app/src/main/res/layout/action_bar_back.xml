@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/action_bar_back"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbarheight"
+    android:background="@drawable/toobar"
+    tools:context="com.zwd.circlesocial20.widget.BackActionBar">
+    <ImageView
+        android:id="@+id/action_bar_back_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginTop="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:src="@mipmap/me_next"/>
+    <TextView
+        android:id="@+id/action_bar_back_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/title"
+        android:textColor="@color/title"
+        android:textSize="@dimen/action_bar_title" />
+        <ImageView
+            android:id="@+id/action_bar_back_add"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_alignParentRight="true"
+            android:src="@mipmap/action_bar_add"/>
+        <TextView
+            android:id="@+id/action_bar_back_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="自定义"
+            android:textSize="@dimen/nomaltextsize"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/title"/>
+</RelativeLayout>
+
+

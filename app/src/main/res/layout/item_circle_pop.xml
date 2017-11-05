@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:id="@+id/circle_pop_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/nomal_margin">
+        <ImageView
+            android:id="@+id/circle_pop_image_1"
+            android:layout_width="@dimen/little_img"
+            android:layout_height="@dimen/little_img"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/circle_write" />
+
+        <TextView
+            android:id="@+id/circle_pop_text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circle_pop_image_1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tab_header"
+            android:text="文字"
+            android:textColor="@color/nomaltext"
+            android:textSize="@dimen/supersmall" />
+        <View
+            android:layout_width="@dimen/action_bar_title"
+            android:layout_height="@dimen/hidder"
+            android:background="@color/nomaltext"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/circle_pop_text_1"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/circle_pop_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/nomal_margin">
+        <ImageView
+            android:id="@+id/circle_pop_image_2"
+            android:layout_width="@dimen/little_img"
+            android:layout_height="@dimen/little_img"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/circle_view"/>
+        <TextView
+            android:id="@+id/circle_pop_text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circle_pop_image_2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tab_header"
+            android:text="视频"
+            android:textColor="@color/nomaltext"
+            android:textSize="@dimen/supersmall" />
+        <View
+            android:layout_width="@dimen/action_bar_title"
+            android:layout_height="@dimen/hidder"
+            android:background="@color/nomaltext"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/circle_pop_text_2"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/circle_pop_picture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/nomal_margin">
+        <ImageView
+            android:id="@+id/circle_pop_image_3"
+            android:layout_width="@dimen/little_img"
+            android:layout_height="@dimen/little_img"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/circle_picture" />
+
+        <TextView
+            android:id="@+id/circle_pop_text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circle_pop_image_3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tab_header"
+            android:text="图片"
+            android:textColor="@color/nomaltext"
+            android:textSize="@dimen/supersmall" />
+        <View
+            android:layout_width="@dimen/action_bar_title"
+            android:layout_height="@dimen/hidder"
+            android:background="@color/nomaltext"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/circle_pop_text_3"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/circle_pop_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/nomal_margin">
+        <ImageView
+            android:id="@+id/circle_pop_image_4"
+            android:layout_width="@dimen/little_img"
+            android:layout_height="@dimen/little_img"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/circle_text" />
+
+        <TextView
+            android:id="@+id/circle_pop_text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/circle_pop_image_4"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/tab_header"
+            android:text="文章"
+            android:textColor="@color/nomaltext"
+            android:textSize="@dimen/supersmall" />
+        <View
+            android:layout_width="@dimen/action_bar_title"
+            android:layout_height="@dimen/hidder"
+            android:background="@color/nomaltext"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/circle_pop_text_4"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

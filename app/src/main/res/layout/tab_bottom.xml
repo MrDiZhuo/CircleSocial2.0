@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/title">
+    <RelativeLayout
+        android:id="@+id/tab_party"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/hidder"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/tab_1"
+            android:layout_centerHorizontal="true"
+            android:layout_width="@dimen/supersmall_img"
+            android:layout_height="@dimen/supersmall_img"
+            android:src="@mipmap/party_before" />
+        <TextView
+            android:id="@+id/text_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/tab_1"
+            android:text="聚会"
+            android:textSize="@dimen/supersmall"
+            android:layout_marginTop="@dimen/tab_header"
+            android:textColor="@color/tab_before"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_circle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/hidder"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/tab_2"
+            android:layout_width="@dimen/supersmall_img"
+            android:layout_height="@dimen/supersmall_img"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/circle_brfore" />
+        <TextView
+            android:id="@+id/text_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_2"
+            android:layout_centerHorizontal="true"
+            android:text="圈子"
+            android:textSize="@dimen/supersmall"
+            android:layout_marginTop="@dimen/tab_header"
+            android:textColor="@color/tab_before"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/tab_friend"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/hidder"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/tab_3"
+            android:layout_width="@dimen/supersmall_img"
+            android:layout_height="@dimen/supersmall_img"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/friend_before" />
+        <TextView
+            android:id="@+id/text_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_3"
+            android:layout_centerHorizontal="true"
+            android:text="朋友"
+            android:textSize="@dimen/supersmall"
+            android:layout_marginTop="@dimen/tab_header"
+            android:textColor="@color/tab_before"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/tab_me"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/hidder"
+        android:layout_marginTop="@dimen/small_margin"
+        android:layout_weight="1">
+        <ImageView
+            android:id="@+id/tab_4"
+            android:layout_width="@dimen/supersmall_img"
+            android:layout_height="@dimen/supersmall_img"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/me_before" />
+        <TextView
+            android:id="@+id/text_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tab_4"
+            android:layout_centerHorizontal="true"
+            android:text="我的"
+            android:textSize="@dimen/supersmall"
+            android:layout_marginTop="@dimen/tab_header"
+            android:textColor="@color/tab_before"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

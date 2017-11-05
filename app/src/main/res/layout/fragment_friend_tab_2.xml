@@ -1,0 +1,39 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.zwd.circlesocial20.Friend.Friend_tab_2Fragment">
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <com.zwd.circlesocial20.Friend.FloatingGroupExpandableListView
+            android:id="@+id/friend_sample_list_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:cacheColorHint="@color/hint"
+            android:childDivider="@color/back"
+            android:divider="@color/back"
+            android:dividerHeight="@dimen/littlehidder" />
+
+
+        <com.zwd.circlesocial20.Friend.FloatingGroupExpandableListView
+            android:id="@+id/friend_sample_list_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cacheColorHint="@color/hint"
+            android:childDivider="@color/back"
+            android:divider="@color/back"
+            android:dividerHeight="@dimen/littlehidder" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>

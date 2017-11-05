@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_login"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/title"
+    tools:context="com.zwd.circlesocial20.Main.Login">
+    <ImageView
+        android:id="@+id/login_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/login_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login"
+        android:hint="手机号/用户名"
+        android:textSize="@dimen/nomaltextsize"
+        android:textColorHint="@color/hint"
+        android:textColor="@color/nomaltext"
+        android:gravity="center_vertical|center_horizontal"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:textCursorDrawable="@null"
+        android:cursorVisible="false"/>
+    <EditText
+        android:id="@+id/login_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/login"
+        android:layout_below="@id/login_phone"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:hint="密码"
+        android:textSize="@dimen/nomaltextsize"
+        android:textColor="@color/nomaltext"
+        android:textColorHint="@color/hint"
+        android:gravity="center_vertical|center_horizontal"
+        android:textCursorDrawable="@null"
+        android:password="true"
+        android:cursorVisible="false"/>
+    <Button
+        android:id="@+id/login_yes"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button"
+        android:layout_below="@+id/login_pwd"
+        android:layout_marginTop="@dimen/big_margin"
+        android:layout_marginLeft="@dimen/big_margin"
+        android:layout_marginRight="@dimen/big_margin"
+        android:background="@drawable/yes"
+        android:text="登录"
+        android:textSize="@dimen/nomaltextsize"
+        android:textColor="@color/title"
+        android:gravity="center"
+        android:layout_alignParentEnd="true"/>
+
+    <TextView
+        android:id="@+id/login_forget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_yes"
+        android:layout_marginTop="@dimen/edit_height"
+        android:layout_marginLeft="@dimen/margin"
+        android:text="忘记密码?"
+        android:textSize="@dimen/smallsize"
+        android:textColor="@color/hint"/>
+
+    <TextView
+        android:id="@+id/login_new"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="立即注册"
+        android:textSize="@dimen/smallsize"
+        android:textColor="@color/hint"
+        android:layout_alignBottom="@+id/login_forget"
+        android:layout_alignEnd="@+id/login_pwd" />
+
+
+
+</RelativeLayout>
